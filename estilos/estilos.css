@@ -1,0 +1,259 @@
+		body{
+			margin:0px;
+		}
+		header {
+			height: 800px;
+			width: 1366px;
+			margin:auto;		
+			background-image: url(../imagenes/background1.jpg);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		main{
+			margin: 0px;
+		}	
+		nav{
+			width: 1366px;
+			position: fixed;
+			top: 0px;
+			text-align: center;
+			background-color: rgba(0,0,0,0.5);
+			height: 100px;
+			z-index: 10;
+			margin:0px auto;
+		 }
+		 nav div {
+		 	margin-top: 0px;
+		 }
+		nav ul {
+		position: absolute;		
+		top: 100px;		
+		left:0px;
+		margin:auto;
+		width: 200px;
+		display: none;	
+		list-style: none;
+		padding: 0px;
+		}		
+		nav li{
+		margin:auto;
+		top:100px;
+		right:0px;
+		vertical-align: middle;
+		}
+		nav a{
+		position: relative;
+		display: inline-block;
+		margin-top: 0px;
+		text-decoration: none;
+ 		width: 200px;
+ 		padding: 40px 0px;/*tuve que poner padding y no height porque por alguna razón no se alinea verticalmente en el medio con margin auto.*/
+		background-color: rgba(0,0,0,0.5);
+  		color: white;
+  		font-size: 20px;
+  		animation: 3.5s ease;
+		}
+		nav a:hover{
+		background-color: rgba(255,255,255,0.5);
+		color: rgba(0,0,0,0.9);
+		display: block;
+		}
+		div .titulo{
+			position: relative;
+			top: 100px;
+			margin:0px;
+		}
+		h1,h2, h3{
+			font-family: "merryweather";
+			color:rgb(50,50,50);
+			margin: 60px 20px;
+		}
+		#anchor1{
+			position: absolute;
+			top:700px;
+		}
+		#anchor2{
+			position: absolute;
+			top:2137px;
+		}
+		#anchor3{
+			position: absolute;
+			top:4037px;
+		}
+		#anchor4{
+			position: absolute;
+			top:5370px;
+		}
+		#anchor5{
+			position: absolute;
+			top:6315px;
+		}
+		#anchor6{
+			position: absolute;
+			top:6900px;
+		}
+		h1{
+			font-weight: 800;
+			font-size: 120px;
+			text-align: center;
+		}
+		h2{
+			font-weight: 600;
+			font-size: 60px;
+			text-align: center;
+		}
+
+		h3{
+			font-weight: 500;
+			font-size: 45px;
+			text-align: center;
+			margin:20px;
+		}
+		p{
+			text-align: center;
+			font-weight: 200;
+			font-size: 30px;
+			font-family: "merryweather";
+			color:rgb(50,50,50);
+			margin: 40px 20px;
+		}
+		figcaption{
+			font-style: italic;
+			font-size: 20px;
+			margin-top: 5px;
+			color: gray;
+		}
+		dl, figcaption {
+			font-family: "montserrat";
+			font-weight: 400;
+		}
+		dl dt {
+		font-weight: 600;
+		}
+		figcaption, dl, dd, dt {
+			margin-top: 5px;
+		}
+		cite{
+			font-weight: 400;
+			font-size: 16px;
+		}
+		#listaautor{
+			display: block;
+			font-family: "arial";
+			font-size: 18px;
+			color: black;
+			font-weight: 300;
+		}
+		.galeria img {
+			display: inline;
+			text-align: center;
+			width: 33.1%;
+			height: 400px;
+		}
+		.principal{
+			width: 1366px;
+			margin:0px auto;
+			background-color:rgba(77,181,146,0.5);
+		}
+		#textoblanco{			
+		color: white;
+		}
+		#logo{
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin-top: 0px;
+			width: 160px;
+			height: 100px;
+			background-image: url("../imagenes/logovallehermoso.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+		.menu{
+			position: absolute;
+			margin:auto;
+			top: 0px;
+			right: 0px;
+			color: white;
+			width: 200px;
+			height: 100px;
+			background-color: rgba(0,0,0,0.5);
+			background-image: url("../imagenes/bars-solid-white.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 50px 50px;
+						
+		}
+		.menu:hover{
+		background-color: rgba(255,255,255,0.5);
+		background-image: url("../imagenes/bars-solid.svg"); 
+		} 
+		.menu:hover ul{
+		display: block;
+		}
+		.titular{
+			margin-top: 50px;
+		}
+		.container{
+			position: relative;
+			height: 580px;
+			width: 100%;
+			background-color: #fef492;
+			margin:auto;
+			overflow: hidden; /* si no pongo overflow hidden en el h3 que
+			 está en la linea 65 del HTML no me lo toma como texto al pasar
+			 el cursor, como si un elemento transparente encima de el lo estuviera tapando,
+			 le puse border a todos los elementos circundantes pero no encontré nada así que 
+			 lo dejo con overflow: hidden.*/
+		}
+		.columnadobleizq {
+			position: absolute;
+			left: 0;
+			margin:20px 20px;
+			width:48%;
+			height: 650px;
+		}
+		.columnadobleder {
+			position: absolute;
+			right: 0;
+			margin:20px 20px;
+			width: 48%;
+			height: 650px;
+		}		
+		.cajaDeImagen{
+			width: 1366px;
+			margin: 20px auto;
+			text-align: center;
+		}
+		.imagen{
+			display: block;
+			max-width: 650px;
+			height:auto;
+			max-height: 550px;
+		}	
+		.imagenflotante{
+			margin-top: 5px;
+			max-width: 400px;
+			max-height: 300px;
+			height: auto;
+		}
+		.der{
+		margin-left: 20px;
+		float: right;	
+		}
+		.izq{
+		margin-right: 20px;
+		float: left;	
+		}
+		.centrada{
+		width: 33%;
+		margin:0px 25px;
+		display: inline-block;
+		}
+
+		.alineacionder{
+			text-align: left;	
+		}
+
