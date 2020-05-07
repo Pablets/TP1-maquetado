@@ -1,5 +1,13 @@
+		
+		*{
+			font-family: "merryweather", "montserrat", arial;
+		}
 		body{
-			margin:0px;
+			margin:0px;background: rgb(0,212,255);
+		background: -webkit-linear-gradient(left, rgba(0,212,255,1) 0%, rgba(2,0,36,1) 25%, rgba(2,0,36,1) 75%, rgba(0,212,255,1) 100%);
+		background: -o-linear-gradient(left, rgba(0,212,255,1) 0%, rgba(2,0,36,1) 25%, rgba(2,0,36,1) 75%, rgba(0,212,255,1) 100%);
+		background: linear-gradient(to right, rgba(0,212,255,1) 0%, rgba(2,0,36,1) 25%, rgba(2,0,36,1) 75%, rgba(0,212,255,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00d4ff",endColorstr="#00d4ff",GradientType=1);
 		}
 		header {
 			height: 800px;
@@ -31,10 +39,10 @@
 		top: 100px;		
 		left:0px;
 		margin:auto;
-		width: 200px;
-		display: none;	
+		width: 200px;	
 		list-style: none;
 		padding: 0px;
+		
 		}		
 		nav li{
 		margin:auto;
@@ -52,22 +60,112 @@
 		background-color: rgba(0,0,0,0.5);
   		color: white;
   		font-size: 20px;
-  		animation: 3.5s ease;
 		}
 		nav a:hover{
-		background-color: rgba(255,255,255,0.5);
+		background-color: rgba(255,255,255,0.8);
 		color: rgba(0,0,0,0.9);
 		display: block;
+		}
+		.menu{
+			position: absolute;
+			margin:auto;
+			top: 0px;
+			right: 0px;
+			color: white;
+			width: 200px;
+			height: 100px;
+			background-color: rgba(0,0,0,0.5);
+			background-image: url("../imagenes/bars-solid-white.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 50px 50px;
+		}
+		.menu:hover{
+		background-color: rgba(255,255,255,0.5);
+		background-image: url("../imagenes/bars-solid.svg");
+		}
+		.animate{
+		visibility: hidden;
+		opacity: 0;
+		transition: opacity 1s;						
+		} 
+		.menu:hover .animate{	
+		display: block;
+		visibility: visible;
+		opacity: 1;
 		}
 		div .titulo{
 			position: relative;
 			top: 100px;
-			margin:0px;
+			margin:0px;			
 		}
+		div .color1{
+		background-color: #eabf9f;
+		margin: auto;
+		width: 100%;
+		height: 650px;
+		overflow: hidden;
+		}
+		div .color2{
+		background-color: #b0e7c7;
+		margin: 0px auto;
+		width: 100%;
+		height: 750px;
+		overflow: hidden;
+		}
+		div .color3{
+		background-color: #ece6d7;
+		margin: 0px auto;
+		width: 100%;
+		height: 950px;
+		overflow: hidden;
+		}
+		div .color4{
+		background-color: #b0f5f8;
+		margin: 0px auto;
+		width: 100%;
+		height: 1000px;
+		overflow: hidden;
+		}
+		div .color5{
+		background-color: #a43a24;
+		margin: 0px auto;
+		width: 100%;
+		height: 1000px;
+		overflow: hidden;
+		}
+		footer {
+		background-color: #212121;
+		margin: 0px auto;
+		width: 1366px;
+		height: 250px;
+		overflow: hidden;
+		}
+		footer ul, footer li, footer a {
+			color: white;
+			font-style: "montserrat";
+			font-size: 20px;
+			list-style: none;
+			margin: 20px;			
+			text-align: center;
+		}
+		h4{
+			color: white;
+			font-size: 25px;
+			font-weight: 400;
+			margin: 50px;
+			text-align: center;
+			font-family: "montserrat";
+			margin:auto;	
+		}
+
 		h1,h2, h3{
 			font-family: "merryweather";
 			color:rgb(50,50,50);
 			margin: 60px 20px;
+		}
+		strong {
+			font-family: inherit;
 		}
 		#anchor1{
 			position: absolute;
@@ -75,11 +173,11 @@
 		}
 		#anchor2{
 			position: absolute;
-			top:2137px;
+			top:1850px;
 		}
 		#anchor3{
 			position: absolute;
-			top:4037px;
+			top:3850px;
 		}
 		#anchor4{
 			position: absolute;
@@ -87,11 +185,11 @@
 		}
 		#anchor5{
 			position: absolute;
-			top:6315px;
+			top:6615px;
 		}
 		#anchor6{
 			position: absolute;
-			top:6900px;
+			top:0px;
 		}
 		h1{
 			font-weight: 800;
@@ -154,7 +252,7 @@
 		.principal{
 			width: 1366px;
 			margin:0px auto;
-			background-color:rgba(77,181,146,0.5);
+			background-color:rgb(77,181,146);
 		}
 		#textoblanco{			
 		color: white;
@@ -171,28 +269,7 @@
 			background-position: center;
 			background-size: cover;
 		}
-		.menu{
-			position: absolute;
-			margin:auto;
-			top: 0px;
-			right: 0px;
-			color: white;
-			width: 200px;
-			height: 100px;
-			background-color: rgba(0,0,0,0.5);
-			background-image: url("../imagenes/bars-solid-white.svg");
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: 50px 50px;
-						
-		}
-		.menu:hover{
-		background-color: rgba(255,255,255,0.5);
-		background-image: url("../imagenes/bars-solid.svg"); 
-		} 
-		.menu:hover ul{
-		display: block;
-		}
+
 		.titular{
 			margin-top: 50px;
 		}
@@ -231,13 +308,17 @@
 			display: block;
 			max-width: 650px;
 			height:auto;
-			max-height: 550px;
+			max-height: 350px;
+			overflow: hidden;
 		}	
 		.imagenflotante{
-			margin-top: 5px;
+			margin-top: 20px;
+			margin-bottom: 20px;
 			max-width: 400px;
 			max-height: 300px;
 			height: auto;
+			display: block;
+			overflow: hidden;
 		}
 		.der{
 		margin-left: 20px;
